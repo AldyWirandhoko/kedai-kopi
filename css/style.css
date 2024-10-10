@@ -107,6 +107,50 @@ body {
   color: var(--bg);
 }
 
+/* shopping cart */
+.shopping-cart {
+  position: absolute;
+  top: 100%;
+  right: -100%;
+  background-color: #fff;
+  width: 35rem;
+  height: 100vh;
+  padding: 0 1.5rem;
+  color: var(--bg);
+  transition: 0.3s;
+}
+.shopping-cart.active {
+  right: 0;
+}
+.shopping-cart .card-item {
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px dashed #666;
+  position: relative;
+}
+.shopping-cart .card-item img {
+  height: 6rem;
+  border-radius: 20%;
+}
+.shopping-cart .card-item .item-detail h3 {
+  font-size: 1.6rem;
+  padding-bottom: 0.5rem;
+}
+.shopping-cart .item-detail .item-price {
+  font-size: 1.2rem;
+}
+.shopping-cart .remove-item {
+  position: absolute;
+  right: 1rem;
+  cursor: pointer;
+}
+.shopping-cart .remove-item:hover {
+  color: var(--primary);
+}
+
 /* Hero */
 .hero {
   background-image: url("../img/coffe.jpg");

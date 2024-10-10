@@ -18,6 +18,15 @@ search.addEventListener("click", function (e) {
   e.preventDefault();
 });
 
+// toggle shopping cart active
+const shoppingCartBtn = document.querySelector("#shopping-cart-btn");
+const shoppingCart = document.querySelector(".shopping-cart");
+
+shoppingCartBtn.addEventListener("click", function (e) {
+  shoppingCart.classList.toggle("active");
+  e.preventDefault();
+});
+
 // Klik di luar elemen
 
 document.addEventListener("click", function (e) {
@@ -26,5 +35,8 @@ document.addEventListener("click", function (e) {
   }
   if (!search.contains(e.target) && !searchForm.contains(e.target)) {
     searchForm.classList.remove("active");
+  }
+  if (!shoppingCartBtn.contains(e.target) && !shoppingCart.contains(e.target)) {
+    shoppingCart.classList.remove("active");
   }
 });
