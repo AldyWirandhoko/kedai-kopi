@@ -231,9 +231,9 @@ body {
 }
 .about .row .about-img img {
   width: 100%;
-  mask-image: url(/img/splash-mask.svg);
+  mask-image: url(/img/splash-mask.png);
   mask-repeat: no-repeat;
-  mask-size: 60%;
+  mask-size: 80%;
   mask-position: center;
 }
 .about .row .content {
